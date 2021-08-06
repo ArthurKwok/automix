@@ -1,3 +1,6 @@
 *.o
 *.mp3
 automix
+*.zip
+*.log
+*.xml
