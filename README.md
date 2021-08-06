@@ -17,24 +17,26 @@ The following software is required to build and run Automix:
 * git
 * make
 * cmake
-* g++ (At least version 8)
+* g++ >= 9.x
 * libpthread
 * libavutil
 * libavformat
 * libavcodec
+* libfftw3
+* libopus
 
 These can easily be installed using a package manager, for example `apt`:
 
 ``` bash
 > sudo apt update
-> sudo apt install git make cmake g++ libavformat-dev
+> sudo apt install git make cmake g++ libavutil-dev libavformat-dev libavcodec-dev libfftw3-dev libopus-dev
 ```
 
 ### Building
 Clone the project and it's submodules, then use make to build it:
 
 ``` bash
-> git clone https://github.com/walkywalker/automix --recurse-submodules
+> git clone https://github.com/ArthurKwok/automix --recurse-submodules
 > cd automix
 > make
 ```
